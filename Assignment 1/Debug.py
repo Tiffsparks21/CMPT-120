@@ -18,7 +18,7 @@ def main():
     name = ""
     print("Hello, my name is ", name)
 
-    #insert your best friend's name here and have it print out
+    #insert your best friend's name here and have it s
     name2 = ""
     print("Hello, my best friend's name is ", name)
     
