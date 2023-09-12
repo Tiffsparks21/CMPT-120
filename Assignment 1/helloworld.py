@@ -5,12 +5,11 @@
 
 
 def main():
+    print("Hello World")
+    r = "red"
+    print ("My favorite color is", r)
+    Birth = "11 01 2000"
+    print("My birth day is", Birth)
 
 
-
-    
-    
-    
-    
-    
 main()
