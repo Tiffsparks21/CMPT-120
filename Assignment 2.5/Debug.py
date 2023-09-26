@@ -39,7 +39,7 @@ def main():
     print(numbers[3] * numbers[1])
     
     #again, why is it getting 7 and 20, I wanted 3 and 29!
-    numbers2 = [465,3,30,7,29,20,82,13,5] 
+    numbers2 = [465,3,30,7,29,20,82,13,5]
     print(numbers2[1])
     print(numbers2[4])
     
