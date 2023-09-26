@@ -12,7 +12,7 @@ def main():
     Tiffany = input("input a number ")
     Tiffany= int(Tiffany)
     if Tiffany > 12:
-        print ("10 is greater than 12")
+        print ("10 is greater than 12") 
     elif Tiffany > 11:
         print ("10 is greater than 11")
     elif Tiffany == 10:
