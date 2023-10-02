@@ -64,3 +64,7 @@ if num1 % 2 == 0:
     print("even number!")
 else:
     print("odd number")
+#10/2/23 Notes
+x=Tiffany
+for x in range(5):
+    print (x)
