@@ -3,6 +3,7 @@ for x in range(5):
     print(name)
 
 print("  ")
+name="Kate"
 animals= ["dog","cat","horse"]
 for x in animals:
     print (name)
