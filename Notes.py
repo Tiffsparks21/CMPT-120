@@ -7,7 +7,7 @@ name="Kate"
 animals= ["dog","cat","horse"]
 for x in animals:
     print (name)
-
+print("")
 #loops going for the amount of letters in the name
 for x in "Marist":
     print (x)
