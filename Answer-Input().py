@@ -13,7 +13,7 @@ def main():
     elif Path == "left":
         Path= input("You found a bear in your path and you tried to out run it but you tripped. Do you defend yourself? (yes/no) ")
         if Path == "yes":
-            print ("You got a stick which did nothing. You died") 
+            print ("You got a stick which did nothing. You died")
         elif Path == "no":
             print ("You crawled into a hole near by and escaped from the bear. You waited until there was no noise and walked safely leaving the woods")
         else:
