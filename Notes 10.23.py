@@ -16,7 +16,7 @@ def printString(x):
 def paramater():
     printString("CMPT120")
 
-paramater() 
+paramater()
 
 #Addition
 def addition(x,y):
@@ -27,3 +27,10 @@ def math():
     addition(4,5)
     addition("Tiffany","Melanio")
 math()
+
+#Pause and play
+def food():
+    print("Pizza")
+
+def favDrink(w):
+    print(w)
