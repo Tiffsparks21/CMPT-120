@@ -5,7 +5,7 @@
 import random
 def bust(y, e, s):
     x = y + e + s
-    # do I make another def addition?
+    #
     if x <= 21:
         return x
     elif (x > 21) and ((y == 11) or (e == 11) or (s == 11)):

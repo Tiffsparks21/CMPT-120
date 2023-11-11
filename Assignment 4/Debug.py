@@ -33,7 +33,7 @@ def main():
     num1 = int(input("Enter number 1"))
     num2 = int(input("Enter number 2"))
     #what go here?
-    print(smaller(num1,num2)) 
+    print(smaller(num1,num2))
 
 
 
