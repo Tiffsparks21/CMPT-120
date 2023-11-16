@@ -1,3 +1,5 @@
+
+import re
 def main():
     #good working example!
     stringInput = input("enter a string")
@@ -28,9 +30,9 @@ def main():
         print("not asterisk :(")
         
     #now write code to check if the input was either an asterisk OR an ampersand (&)
-    asteriskAmpersand = input("Enter an asterick * OR an ampersand &")
+    asteriskAmpersand = input("Enter an asterisk * OR an ampersand &")
     if asteriskAmpersand == "*":
-        print("asterick printed!")
+        print("asterisk printed!")
     elif asteriskAmpersand == "&":
         print("Ampersand printed!")
     elif asteriskAmpersand == "*&" or asteriskAmpersand == "&*":
@@ -42,11 +44,17 @@ def main():
     #integer = input("Enter an integer")
     integer = input("enter an int")
     if integer.isnumeric():
-        integer = int(integer)# knick off the quotes
+        integer = int(integer)# this will knick off the quotes
         print("int!")
     else:
         print("not int :(")
     # last challenge: find out how to check if the string input has the substring "marist"
     #google this one ;) substring is the key google term
+    subString = "Melissa work at marist college :)"
+    if re.search(r"marist", subString):
+        print("there's a substring")
+    else:
+        print("There's No substring")
+
     
 main()
