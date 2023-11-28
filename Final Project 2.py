@@ -1,18 +1,12 @@
 #This is a choose your own adventure game!
 #QUESTIONS:
-# How do I loop my game if the user typed in an error?
-while False:
-    yourName = str(intput("Type in your name "))
-    if yourName.isnumberic():
-        print("That's a number! Type in letters")
-    else:
-        print("What a great name!")
-        break
+
+
 def YoshRoast():
     print("You walk downstairs and see Bowser at the head of the dinning table. You were ready to fight Bowser but he was "
           "looking down while leaning his head on this right hand. Bowser finally look up to meet your gaze. He said 'I'm"
           " tired of this. All Raspberry ever do is talk about herself and how much she hates Peach. I tried to be the best"
-          "Dragon-Turle Host and try to get to know the 'Real' Raspberry underneath that annoyance of hers, but she doesn't even"
+          "Dragon-Turtle Host and try to get to know the 'Real' Raspberry underneath that annoyance of hers, but she doesn't even"
           "say thank you after the (illegal) Roasted Yoshi I got for her dinner. You know what, just take her' " )
     print("You happily took Raspberry and gave her to Wario. You got your (illegal) blue Yoshi and partied with Peach, Mario, and Luigi"
           "while talking shit about Raspberry. THE END")
@@ -37,22 +31,27 @@ def roulette():
         if spinNumber == 0:
             print(
                 "CLICK! Nothing came out? Since you didn't die Bowser watching from afar just realized he forgot to fully reload the 'Toy' gun."
-                "But, Bowser is a Dragon(....Turle?) of his word. When he gave you Raspberry, the bitch was filling her nails while saying "
+                "But, Bowser is a Dragon(....Turtle?) of his word. When he gave you Raspberry, the bitch was filling her nails while saying "
                 " 'What took you so long? Even Luigi would have been here quicker than you'....You punched her in the face for her ungrateful ass"
                 "and carried the unconscous bitch over your shoulder to the wedding. Once you arrived you tossed her towards Wario and Raspberry woke up happy in Wario's arms."
                 "You danced with Peach, Mario, and Luigi and told them the tea of how you heard Boswer's minions Gossiping on how Bowser was wearing earplugs to not ear "
                 "Raspberry bitching of not being the next princess during her stay. You got had fun at the party with your blue Yoshi. THE END")
             break
-        else: #??DELETE??Do I need this else statement? Like is this for when the number is Greater than 6?
-    if spinNumber > 6:
-        print("Please pick a number between 1-6")
-        return# Do I even need this??? Is this too confusing?
-
-
-
+        else:
+            print("Please pick a number between 1-6")
+            pass
+        #return# Do I even need this???
 
 def main():
-    print("Hello",yourName, "!")
+    yourName = ""
+    while True:
+        yourName = str(input("Type in your name "))
+        if yourName.isnumeric():
+            print("That's a number! Type in letters")
+        else:
+            print("What a great name!")
+            break
+    print("Hello", yourName, "!")
     print("You're in Bowser's castle and you're trying to save Peach's annoying sister, Raspberry."
           "The only reason you're saving Raspberry is cause you promised Wario you would get him a "
           "date for the Boo's Wedding. Bowser wanted to go Peach but obviously Peach was going with Mario"
@@ -62,17 +61,20 @@ def main():
           "and you know you will take good care......... Anyway, back to the game."
           "You want to go see a large portrait of Peach in the left, a balcony to the right, "
           "and infront of you are stairs going down. Which do you choose?")
-    path = str(input("portrait, balcony, or stairs? "))
-    while path == "portrait" or "balcony" or "stairs":
-        if == "portrait":
+    while True:
+        path = str(input("portrait, balcony, or stairs? "))
+        if path == "portrait":
             print(roulette())
-        elif == "balcony":
+            break
+        elif path == "balcony":
             print(lava())
-        elif == "stairs":
+            break
+        elif path == "stairs":
             print(YoshRoast())
+            break
         else:
             print("wrong input. Type in only one of the following choices")
-            return path # will it return to the start of the game? Will it loop around to the start until reached final ending?
+            # path # will it return to the start of the game? Will it loop around to the start until reached final ending?
 
 #1 for/ While Loops
 #3 variables
