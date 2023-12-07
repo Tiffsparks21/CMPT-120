@@ -32,7 +32,7 @@ def roulette():
                 break
             else:
                 print("Number was larger than 6 try again")
-        else:
+        else: 
             print("You input not a number. type in a number")
 
     while spinNumber <= 6:
