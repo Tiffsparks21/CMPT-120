@@ -28,7 +28,10 @@ def roulette():
         spinNumber = input("How many times will you spin the dial? Pick a number between 1-6 ")
         if spinNumber.isnumeric():
             spinNumber = int(spinNumber)
-            break
+            if spinNumber <= 6:
+                break
+            else:
+                print("Number was larger than 6 try again")
         else:
             print("You input not a number. type in a number")
 
